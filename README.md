@@ -1,6 +1,6 @@
 # Week1 Assignment
 
-- ** Author: Mohamad Wahba **
+ ** Author: Mohamad Wahba **
 
 - Description: 
   
