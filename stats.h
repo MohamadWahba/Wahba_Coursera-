@@ -21,6 +21,9 @@
 #ifndef __STATS_H__
 #define __STATS_H__
 
+
+
+
 /* Add Your Declarations and Function Comments here */ 
 
 /**
@@ -39,6 +42,9 @@ void print_array(unsigned int arr_size ,unsigned char  *array);
 
 
 
+
+
+
 /**
  * @brief   a function to print all the statistics done on the array 
  *
@@ -51,6 +57,8 @@ void print_array(unsigned int arr_size ,unsigned char  *array);
  * @return  void no return type
  */
 void print_statistics(unsigned int arr_size ,unsigned char  *array);
+
+
 
 
 
@@ -69,6 +77,8 @@ int find_maxumum(unsigned int arr_size ,unsigned char  *array);
 
 
 
+
+
 /**
  * @brief   a function to get the minimum value in the given array 
  *
@@ -83,6 +93,8 @@ int find_maxumum(unsigned int arr_size ,unsigned char  *array);
 int find_minimum(unsigned int arr_size ,unsigned char  *array);
 
 
+
+
 /**
  * @brief   a function to get the mean value in the given array (which is basically an average)
  *
@@ -95,6 +107,9 @@ int find_minimum(unsigned int arr_size ,unsigned char  *array);
  * @return (sum/arr_size) integer value of the mean (sum of the elements / their number )
  */
 int find_mean(unsigned int arr_size ,unsigned char  *array);
+
+
+
 
 
 /**
@@ -113,16 +128,17 @@ int find_median(unsigned int arr_size ,unsigned char  *array);
 
 
 
+
 /**
- * @brief   a bubble sort function
+ * @brief   a bubble sort function in a descending order 
  *
- * the median of an odd num of elements is the middle, and the average of the two center values if even 
+ * scans the whole array from end to start and swaps every two elements when a specified condition is met (condition determins the sorting order ) 
  *
  * @param   arr_size   an unsigned integer representing the size of the array (i.e the number of elements) 
  * 
  * @param  *array   unsigned pointer to the array 
  *
- * @return (array[(arr_size-1)/2] + array[arr_size/2])/2    integer value of the median (sum of the elements / their number )
+ * @return  array   a pointer to the sorted array (in descending order)
  */
 
 unsigned char* sort_array(unsigned int arr_size ,unsigned char  *array);

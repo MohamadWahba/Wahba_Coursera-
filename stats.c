@@ -29,8 +29,9 @@
 
 /* Size of the Data Set */
 #define SIZE (40)
-unsigned int i = 0;
-int max;
+
+unsigned int i = 0;  //global array counter 
+int max; 
 int min;
 
 
@@ -51,6 +52,8 @@ void main() {
 	
 	print_array(SIZE , test);
 }
+
+/**************************************************************/
 
 /* Add other Implementation File Code Here */
 
@@ -116,8 +119,9 @@ unsigned char* sort_array(unsigned int arr_size ,unsigned char  *array ){
 	for(int i = arr_size-1 ; i>=0 ;i--){
 		for(int j = 0 ; j<i ; j++){
 	
-			if(array[j] > array[j+1]){
+			if(array[j] < array[j+1]){
 				
+				// swap if current elem < next elem   (so it produces a descending order)
 				unsigned char temp = array[j];
 				array[j] = array[j+1];
 				array[j+1] = temp;
