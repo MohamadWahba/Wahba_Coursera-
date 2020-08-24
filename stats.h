@@ -73,7 +73,7 @@ void print_statistics(unsigned int arr_size ,unsigned char  *array);
  *
  * @return max  an integer value of the maximum
  */
-int find_maxumum(unsigned int arr_size ,unsigned char  *array);
+int find_maximum(unsigned int arr_size ,unsigned char  *array);
 
 
 
@@ -132,7 +132,7 @@ int find_median(unsigned int arr_size ,unsigned char  *array);
 /**
  * @brief   a bubble sort function in a descending order 
  *
- * scans the whole array from end to start and swaps every two elements when a specified condition is met (condition determins the sorting order ) 
+ * scans the whole array from end to start and swaps every two elements when a specified condition is met (condition determines the sorting order ) 
  *
  * @param   arr_size   an unsigned integer representing the size of the array (i.e the number of elements) 
  * 
